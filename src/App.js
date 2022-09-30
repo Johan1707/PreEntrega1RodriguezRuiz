@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { products } from './data/products'
 import Navbar from './components/Navbar'
 import Layout from './components/Layout'
-import Title from './components/Title'
+import ItemListContainer from './components/ItemListContainer'
 import Productos from './components/Productos'
 
 const App = () => {
@@ -42,7 +42,7 @@ const App = () => {
         mostrarCarro={mostrarCarro}
       />
       <Layout>
-        <Title />
+        <ItemListContainer greeting='Tienda'/>
         <Productos
           agregarAlCarro = {agregarAlCarro}
           productos = {productos}
